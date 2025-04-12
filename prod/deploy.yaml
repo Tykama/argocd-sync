@@ -6,7 +6,7 @@ metadata:
     app: tony
   name: tony
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: tony
@@ -17,8 +17,8 @@ spec:
         app: tony
     spec:
       containers:
-      - image: nginx
-      #  image: tonyit1985/ngnix: 2.0.0
+      #- image: nginx
+      - image: tonyit1985/ngnix: 2.0.0
         name: kubenginx
         ports:
         - containerPort: 80
