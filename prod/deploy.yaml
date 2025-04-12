@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       #- image: nginx
-      - image: tonyit1985/ngnix: 2.0.0
+      - image: tonyit1985/ngnix:2.0.0
         name: kubenginx
         ports:
         - containerPort: 80
